@@ -30,17 +30,17 @@
         lower_layer {
 // -------------------------------------------------------------                                       -------------------------------------------------------------
 // |         |         |         |         |         |         |                                       |         |         |         |         |         |         |
-// |         |    0    |    1    |    2    |    3    |  BSPC   |----------                             |  DEL    |   HOME  |   UP    |  END    |         |         |
-// |         |    0    |    4    |    5    |    6    |  DEL    |         |-----------------------------|  BSPC   |   LEFT  |   DOWN  |  RIGHT  |         |         |
-// |    -    |    0    |    7    |    8    |    9    |         |         |         |         |         |         |   PG UP | APP MENU| PG DOWN |         |    -    |
-// ----------------------------------------|    -    |  -      |    -    |  ENTER  | ESCAPE  |    -    |    -    |    -    |----------------------------------------
+// |         |    0    |    7    |    8    |    9    |  BSPC   |----------                             |  DEL    |   HOME  |   UP    |  END    |  PG UP  |         |
+// |         |    0    |    4    |    5    |    6    |  DEL    |         |-----------------------------|  BSPC   |   LEFT  |   DOWN  |  RIGHT  | PG DOWN |         |
+// |    -    |    0    |    1    |    2    |    3    |  TAB    |         |         |         |         |  TAB    |         | APP MENU|         |         |    -    |
+// ----------------------------------------|    -    |  -      |    -    |    -    |   -     |    -    |    -    |    -    |----------------------------------------
 //                                         ---------------------------------------------------------------------------------
             bindings = <
-    &none         &none    &none    &none     &none     &none                                          &none       &none      &none      &none      &none   &none
-    &none         &kp N0   &kp N1   &kp N2    &kp N3    &kp BSPC                                       &kp DEL     &kp HOME   &kp UP     &kp END    &none   &none
-    &none         &kp N0   &kp N4   &kp N5    &kp N6    &kp DEL   &none                                &kp BSPC    &kp LEFT   &kp DOWN   &kp RIGHT  &none   &none
-    &trans        &kp N0   &kp N7   &kp N8    &kp N9    &none     &none   &none    &none     &none     &none       &kp PG_UP  &kp K_APP  &kp PG_DN  &none   &trans
-                                              &trans    &trans    &trans  &kp RET  &kp ESC   &trans    &trans      &trans
+    &none         &none    &none    &none     &none     &none                                          &none       &none      &none      &none      &none      &none
+    &none         &kp N0   &kp N7   &kp N8    &kp N9    &kp BSPC                                       &kp DEL     &kp HOME   &kp UP     &kp END    &kp PG_UP  &none
+    &none         &kp N0   &kp N4   &kp N5    &kp N6    &kp DEL   &none                                &kp BSPC    &kp LEFT   &kp DOWN   &kp RIGHT  &kp PG_DN  &none
+    &trans        &kp N0   &kp N1   &kp N2    &kp N3    &kp TAB   &none   &none    &none     &none     &kp TAB     &none      &kp K_APP  &none      &none      &trans
+                                              &trans    &trans    &trans  &trans   &trans    &trans    &trans      &trans
             >;
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
