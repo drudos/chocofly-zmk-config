@@ -11,18 +11,18 @@
 
         default_layer {
 // ------------------------------------------------------------------------                                              -----------------------------------------------------------------
-// |   F1    |    F2   |    F3   |    F4   |  F5         |  F6            |                                              |  F7           |    F8    |    F9   |   F10 |   F11  |    F12  |
-// |   TAB   |    Q    |    W    |    E    |  R          |  T             |-----------                                   |  Y            |    U     |    I    |   O   |   P    |    [    |
-// |   \     |    A    |    S    |    D    |  F          |  G             |   VOL_M  |-----------------------------------|  H            |    J     |    K    |   L   |   ;    |    '    |
-// |   CTRL  |    Z    |    X    |    C    |  V          |  B             |   GRAVE  |     INSERT  |  PR_SCR    |    ]   |  N            |    M     |    ,    |   .   |   /    |  R CTRL |
-// ----------------------------------------|  GUI        |  SHIFT         |   SPACE  |     ESCAPE  |  ENTER     |    FN  |  R SHIFT      |   GUI    |-------------------------------------
+// |   ESC   |    F2   |    F3   |    F4   |  F5         |  F6            |                                              |  F7           |    F8    |    F9   |   F10 |   F11  |    F12  |
+// |   ~     |    Q    |    W    |    E    |  R          |  T             |-----------                                   |  Y            |    U     |    I    |   O   |   P    |    \    |
+// |   TAB   |    A    |    S    |    D    |  F          |  G             |   VOL_M  |-----------------------------------|  H            |    J     |    K    |   L   |   ;    |    '    |
+// | LSHFT ) |    Z    |    X    |    C    |  V          |  B             |   F1     |     CAPS    |  PR_SCR    |  MENU  |  N            |    M     |    ,    |   .   |   /    | RSHFT ) |
+// ----------------------------------------|  GUI        |  LCTRL =       |   L1 [   |   RALT RET  |  SPACE     |  L1 ]  |  RCTRL -      |   GUI    |-------------------------------------
 //                                         ----------------------------------------------------------------------------------------------------------
            bindings = <
-    &kp ESC         &kp F2   &kp F3   &kp F4   &kp F5        &lt 3 F6                                                       &kp F7          &kp F8     &kp F9    &kp F10 &kp F11  &kp F12
-    &kp GRAV        &kp Q    &kp W    &kp E    &kp R         &kp T                                                          &kp Y           &kp U      &kp I     &kp O   &kp P    &kp LBKT
-    &kp TAB         &kp A    &kp S    &kp D    &kp F         &kp G           &kp K_MUTE                                     &kp H           &kp J      &kp K     &kp L   &kp SEMI &kp SQT
-    &mt LSHFT LPAR  &kp Z    &kp X    &kp C    &kp V         &kp B           &kp GRAVE   &kp INS      &kp PSCRN    &kp RBKT &kp N           &kp M      &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-                                               &kp LGUI      &mt LCTRL EQUAL &lt 2 SPACE &mt LALT ESC &mt RALT RET &mo 1    &mt RSHFT MINUS &lt 2 LGUI
+    &kp ESC         &kp F2   &kp F3   &kp F4   &kp F5     &lt 3 F6                                                          &kp F7           &kp F8     &kp F9    &kp F10 &kp F11  &kp F12
+    &kp GRAV        &kp Q    &kp W    &kp E    &kp R      &kp T                                                             &kp Y            &kp U      &kp I     &kp O   &kp P    &kp BSLH
+    &kp TAB         &kp A    &kp S    &kp D    &kp F      &kp G            &kp K_MUTE                                       &kp H            &kp J      &kp K     &kp L   &kp SEMI &kp SQT
+    &mt LSHFT LPAR  &kp Z    &kp X    &kp C    &kp V      &kp B            &kp F1      &kp CAPS      &kp PSCRN  &kp K_APP   &kp N            &kp M      &kp COMMA &kp DOT &kp FSLH &mt RSHFT RPAR
+                                               &kp LGUI   &mt LCTRL EQUAL  &lt 1 LBKT  &mt RALT RET  &kp SPACE  &lt 1 RBKT  &mt RCTRL MINUS  &kp LGUI
             >;
             sensor-bindings = <&inc_dec_kp K_VOL_UP K_VOL_DN>;
         };
